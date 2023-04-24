@@ -2,7 +2,6 @@ fun main() {
 
     val arr: IntArray = intArrayOf(1, 3, 3, 6)
     println(runningSum(arr))
-
 }
 
 
@@ -10,9 +9,10 @@ fun runningSum(nums: IntArray): IntArray {
     var result = 0
     for (item in nums) {
         result += item
-        // сделать добавление в массив, связано с индексами
+        println(result)
     }
     return nums
+
 
 }
 
