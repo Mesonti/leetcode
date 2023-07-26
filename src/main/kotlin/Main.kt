@@ -1,10 +1,15 @@
+import java.util.LinkedList
+
 fun main(args: Array<String>) {
 
     val result = RomanToInteger()
+    val number = 123
 
-    println(RomanToInteger().romanToInt("MCMXCIV"))
-    println(RomanToInteger().romanToInt("XXI"))
-    println(RomanToInteger().romanToInt("CCM"))
+
+
+    val res = Sol().spinWords("Hello my name")
+    println(res)
+
 
 }
 
