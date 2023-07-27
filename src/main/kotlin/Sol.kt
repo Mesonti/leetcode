@@ -34,18 +34,12 @@ class Sol {
 
 
     fun spinWords(sentence: String): String {
-        var count: String = ""
-        for (word in sentence) {
-            if (word.code >= 5) {
-                if (word == ' ') {
+        var newString = sentence.split(" ").toString()
+        return newString
 
-                }
-                count = word.toString().reversed()
-                println(count)
-            }
-            else false
-        }
-        return count
+        // слово из пяти букв
+        // оволс из пяти букв
+
     }
 
 }
