@@ -1,14 +1,13 @@
-import java.util.LinkedList
+
 
 fun main(args: Array<String>) {
 
-    val result = RomanToInteger()
-    val number = 123
+    val sol = RomanToInteger()
 
+    val num = "LVIII"
+    val num1 = "MCMXCIV"
 
-
-    val res = Sol().spinWords("Hello my name")
-    println(res)
+    println(sol.printNum())
 
 
 }
