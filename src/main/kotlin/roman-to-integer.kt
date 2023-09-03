@@ -1,10 +1,29 @@
 class RomanToInteger {
-    fun romanToInt(s: String): Int {
 
+    var four = 0
+    var nine = 0
+    var fourteen = 0
+
+    fun printNum() {
+        println(four)
+        println(nine)
+        println(fourteen)
+    }
+
+
+    // поместить в HashMap ключ(цифра)=значение(римское число)
+    var mapOfRomanInteger: Map<Int, String> = mapOf(1 to "I", 4 to "IV", 5 to "V",
+        9 to "IX", 10 to "X", 40 to "XL", 50 to "L", 90 to "XC", 100 to "C",
+        400 to "CD", 500 to "D", 900 to "CM", 1000 to "M")
+
+    fun romanToInt(romanInteger: String): Int {
+        // M CM XC IV
+        // M CM XC IV 1000 + 900 + 90 + 4
+        // IV — 4, IX - 9
+        // XL - 40, XC — 90
+        // CD — 400, CM — 900
         var normalInt = 0
-        for (integer in s) {
-            // split?
-            // think about reading massive of string for delimeters on roman parts
+        for (integer in romanInteger) {
             when (integer) {
                 'I' -> { normalInt += 1 }
                 'V' -> { normalInt += 5 }

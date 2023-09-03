@@ -42,4 +42,46 @@ class Sol {
 
     }
 
-}
+    // upSpeed = 10, downSpeed = 9, dHeight = 50, —
+    /**
+     * Рассчитыва...
+     */
+    fun growingPlant(upSpeed: Int, downSpeed: Int, desiredHeight: Int): Int {
+        var daysCount = 0
+        var growingSpeed = 0
+        do {
+            growingSpeed += upSpeed
+            daysCount++
+            println("After day ${daysCount - 1} --> $growingSpeed")
+            if (growingSpeed != desiredHeight) {
+                growingSpeed -= downSpeed
+                println("After night ${daysCount - 1} --> $growingSpeed")
+            }
+
+        }
+            while (growingSpeed != desiredHeight)
+        return daysCount
+    }
+
+    // completed
+    fun simpleMultiplication(n: Int): Int {
+
+        return if ((n % 2) == 0) {
+            n * 9
+        }
+        else {
+            n * 8
+        }
+    }
+
+    fun maxMultiple(d: Int, b: Int): Int {
+        var n = b
+        var count = 0
+        do {
+            n -= d
+            count++
+            if (n == 1 || (count * d) <= b) count *= d
+        } while (n != 1 || count <= n)
+        return count
+        }
+    }
