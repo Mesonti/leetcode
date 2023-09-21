@@ -1,16 +1,13 @@
-
-
 fun main(args: Array<String>) {
 
-    val sol = RomanToInteger()
+    val sol = LongestCommonPrefix()
+    val arrayOfString = arrayOf("hello", "help", "healing")
 
-    val num = "LVIII"
-    val num1 = "MCMXCIV"
-
-    println(sol.printNum())
-
+//    println(sol.longestCommonPrefix(arrayOfString))
+    val sol1 = GetASCII()
 
 }
+
 
 
 
