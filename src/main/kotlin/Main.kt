@@ -4,7 +4,10 @@ fun main(args: Array<String>) {
     val arrayOfString = arrayOf("hello", "help", "healing")
 
 //    println(sol.longestCommonPrefix(arrayOfString))
-    val sol1 = GetASCII()
+
+
+    val sol2 = AbbreviateTwoWordName()
+    println(sol2.abbrevName("james harrison"))
 
 }
 
