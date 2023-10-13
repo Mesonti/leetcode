@@ -6,8 +6,10 @@ fun main(args: Array<String>) {
 //    println(sol.longestCommonPrefix(arrayOfString))
 
 
-    val sol2 = AbbreviateTwoWordName()
-    println(sol2.abbrevName("james harrison"))
+    var sol1 = CatsDogsYears()
+    println(sol1.calculateYears(1))
+    println(sol1.calculateYears(2))
+    println(sol1.calculateYears(10))
 
 }
 
